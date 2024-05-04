@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "gqNcmnlMuNhEc+LUomUp4CQVD/tmeUuYSpzQ/CZwxaEQGvet2o1YSUwMawKIgtyNuoq2+A2zFJbxGoJCqt0ylA==",
+  "success": true,
+  "projectFilePath": "E:\\Projects\\Programming\\Learning C#\\Learning C#.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Arian\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\Arian\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\Arian\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\Arian\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.18\\microsoft.netcore.app.host.win-x64.7.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}
