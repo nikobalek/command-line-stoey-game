@@ -1,7 +1,8 @@
 ﻿Console.Title = "First Game";
+string name;
 
 aiSay("Hello, World!");
-var name = aiAsk("Whats your name?");
+name = aiAsk("Whats your name?");
 aiSay("hello " + name + "!");
 Console.ReadKey();
 
@@ -9,8 +10,7 @@ void aiSay(string text, ConsoleColor color = ConsoleColor.Green)
 {
     Console.ForegroundColor = color;
     Console.WriteLine(text);
-    color = ConsoleColor.White;
-    Console.ForegroundColor = color;
+    Console.ResetColor();
 }
 
 string aiAsk(string text, ConsoleColor color = ConsoleColor.Green)
@@ -18,8 +18,7 @@ string aiAsk(string text, ConsoleColor color = ConsoleColor.Green)
     string answear;
     Console.ForegroundColor = color;
     Console.WriteLine(text);
-    color = ConsoleColor.White;
-    Console.ForegroundColor = color;
+    Console.ResetColor();
     answear = Console.ReadLine();
-    return answear;   
+    return answear;
 }
