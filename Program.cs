@@ -5,19 +5,21 @@ var name = aiAsk("Whats your name?");
 aiSay("hello " + name + "!");
 Console.ReadKey();
 
-void aiSay(string text)
+void aiSay(string text, ConsoleColor color = ConsoleColor.Green)
 {
-    Console.ForegroundColor = ConsoleColor.Green;
+    Console.ForegroundColor = color;
     Console.WriteLine(text);
-    Console.ForegroundColor = ConsoleColor.White;
+    color = ConsoleColor.White;
+    Console.ForegroundColor = color;
 }
 
-string aiAsk(string text)
+string aiAsk(string text, ConsoleColor color = ConsoleColor.Green)
 {
     string answear;
-    Console.ForegroundColor = ConsoleColor.Green;
+    Console.ForegroundColor = color;
     Console.WriteLine(text);
-    Console.ForegroundColor = ConsoleColor.White;
+    color = ConsoleColor.White;
+    Console.ForegroundColor = color;
     answear = Console.ReadLine();
     return answear;   
 }
