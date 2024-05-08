@@ -27,7 +27,7 @@ async void aiSay(string text, ConsoleColor color = ConsoleColor.Green)
 
 string aiAsk(string text, ConsoleColor color = ConsoleColor.Green)
 {
-    aiSay(text, color);
+    aiSay(text,color);
     return Console.ReadLine();
 }
 
