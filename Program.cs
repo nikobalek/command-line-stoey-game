@@ -24,7 +24,7 @@ void aiSay(string text, ConsoleColor color = ConsoleColor.Green)
 
 string aiAsk(string text, ConsoleColor color = ConsoleColor.Green)
 {
-    aiSay(text,color);
+    aiSay(text, color);
     return Console.ReadLine();
 }
 
@@ -39,7 +39,8 @@ void type(string text)
 
         //skip for typing animation
         if (Console.KeyAvailable)
-        {   
+        {
+            Console.ReadKey(intercept: true);
             delayTime = 0;
         }
     }
