@@ -1,6 +1,4 @@
-﻿using System.Net.Http.Headers;
-
-Console.Title = "First Game";
+﻿Console.Title = "First Game";
 string name;
 
 aiSay("Hello, Player! Welcome to this mini game!");
@@ -15,10 +13,9 @@ aiSay("Anyways " + name + "\nlet's get to the point! you came here for a game an
 aiAsk("Are you ready?");
 aiSay("Actully I dont give a fuck about what you said lets get to the point!");
 
-
 Console.ReadKey();
 
-async void aiSay(string text, ConsoleColor color = ConsoleColor.Green)
+void aiSay(string text, ConsoleColor color = ConsoleColor.Green)
 {
     Console.ForegroundColor = color;
     type(text);
@@ -39,6 +36,12 @@ void type(string text)
     {
         Console.Write(text[i]);
         Thread.Sleep(delayTime);
+
+        //skip for typing animation
+        if (Console.KeyAvailable)
+        {   
+            delayTime = 0;
+        }
     }
     Console.WriteLine();
 }
