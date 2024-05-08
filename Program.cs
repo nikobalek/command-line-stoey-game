@@ -11,7 +11,7 @@ if (name == "Arian")
 else
     aiSay(name + "?" + " who in the right mind would name their child that?!");
 
-aiSay("Anyways " + name+"\nlet's get to the point! you came here for a game and im gonna give it to you!");
+aiSay("Anyways " + name + "\nlet's get to the point! you came here for a game and im gonna give it to you!");
 aiAsk("Are you ready?");
 aiSay("Actully I dont give a fuck about what you said lets get to the point!");
 
@@ -27,20 +27,18 @@ async void aiSay(string text, ConsoleColor color = ConsoleColor.Green)
 
 string aiAsk(string text, ConsoleColor color = ConsoleColor.Green)
 {
-    string answear;
-    Console.ForegroundColor = color;
-    type(text);
-    Console.ResetColor();
-    answear = Console.ReadLine();
-    return answear;
+    aiSay(text, color);
+    return Console.ReadLine();
 }
 
 void type(string text)
 {
-    for (int i = 0; i < text.Length; i++) 
-    {   
+    int delayTime = 48;
+
+    for (int i = 0; i < text.Length; i++)
+    {
         Console.Write(text[i]);
-        Thread.Sleep(100);
+        Thread.Sleep(delayTime);
     }
     Console.WriteLine();
 }
